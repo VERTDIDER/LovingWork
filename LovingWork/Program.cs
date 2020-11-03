@@ -3,27 +3,7 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 
 namespace LovingWork
-{
-    class LovingWorkWithDate
-    {
-        public string toDateWithTime(DateTime d) => d.ToString("g");
-        public string toDate(DateTime d) => d.ToString("d");
-        public DateTime toLogicDate(string s)
-        {
-            var provider = new CultureInfo("ru-RU");
-            try
-            {
-                var dt = DateTime.ParseExact(s, "g", provider);
-                return dt;
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Unacceptable data format");
-                return DateTime.Now;
-            }
-        }
-    }
-
+{ 
     class LovingWorkWithStrings
     {
         public string GetStringInfo(string s)
