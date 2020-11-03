@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LovingWork", "LovingWork\LovingWork.csproj", "{FF230607-61DC-4A4C-95E2-1B41CF5758B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF230607-61DC-4A4C-95E2-1B41CF5758B7}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{FF230607-61DC-4A4C-95E2-1B41CF5758B7}.Debug|anycpu.Build.0 = Debug|anycpu
+		{FF230607-61DC-4A4C-95E2-1B41CF5758B7}.Release|anycpu.ActiveCfg = Release|anycpu
+		{FF230607-61DC-4A4C-95E2-1B41CF5758B7}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
