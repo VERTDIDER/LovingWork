@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
+using System.Collections.Generic;
+using System.Text;
 
 namespace LovingWork
 {
@@ -36,6 +38,21 @@ namespace LovingWork
             return $"count of words - {count_of_words}, count of words including letter - {count_of_words_including_letter}, count of letter - {count_of_letter}";
         }
 
+        //в чем разница List<int> и int[]?
+        public string GetStringFromList(List<int> numbers)
+        {
+            StringBuilder sb = new StringBuilder();
+            //
+            //StringBuilder нужен так как неопределенное колво итераций//
+            //
+            foreach (int number in numbers)
+            {
+                String temp = number.ToString();
+                sb.Append($"{temp}, ");
+            }
+            sb.Remove(sb.Length - 2, 2);
+            return sb.ToString();
+        }
 
     }
     class MainClass
@@ -44,7 +61,11 @@ namespace LovingWork
         {
             string str = "rama mau djhed aejkncje  weuf";
             LovingWorkWithStrings love = new LovingWorkWithStrings();
-            Console.WriteLine(love.GetStringInfo(str));
+            //Console.WriteLine(love.GetStringInfo(str));
+
+
+            List<int> numbers = new List<int>() { 1,2,3,4,5,6,7,8,9,10 };
+            Console.WriteLine(love.GetStringFromList(numbers));
         }
     }
 }
