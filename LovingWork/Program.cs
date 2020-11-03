@@ -41,7 +41,7 @@ namespace LovingWork
                     count_of_words_including_letter++;
                 }
             }
-            return $"Количество слов - {count_of_words}, количество слов с данной буквой - {count_of_words_including_letter}, сколько раз буквы была найдена - {count_of_letter}";
+            return $"Count of words - {count_of_words}, count of words including letter- {count_of_words_including_letter}, count of letter - {count_of_letter}";
         }
     }
     class MainClass
