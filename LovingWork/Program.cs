@@ -87,7 +87,7 @@ namespace LovingWork
             //Console.WriteLine(love.toLogicDate(date_str));
 
 
-            string str = "rama mau djhed aejkncje  weuf";
+            //string str = "rama mau djhed aejkncje  weuf";
             LovingWorkWithStrings love = new LovingWorkWithStrings();
             //Console.WriteLine(love.GetStringInfo(str));
 
