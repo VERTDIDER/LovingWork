@@ -10,7 +10,7 @@ namespace LovingWork
     {
         public string toDateWithTime(DateTime d) => d.ToString("g");
         public string toDate(DateTime d) => d.ToString("d");
-        public DateTime toLogicDate(string s)
+        public DateTime ToLogicDate(string s)
         {
             var provider = new CultureInfo("ru-RU");
             try
